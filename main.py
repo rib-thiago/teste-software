@@ -1,3 +1,11 @@
+"""
+Exemplo de uso das classes Aluno e Turma para cadastrar alunos.
+
+Contém métodos para encontrar a menor e a maior nota, e mostrar informações
+sobre a turma.
+"""
+
+
 import aluno as a
 import turma as t
 
