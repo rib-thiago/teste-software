@@ -27,6 +27,6 @@ profile = "black"
 line_length = 79
 
 [tool.taskipy.tasks]
-lint = "blue --check --diff . && isort --check --diff ."
+lint = "blue . && isort ."
 test = "pytest -s -x -vv"
 
