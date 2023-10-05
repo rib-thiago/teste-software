@@ -25,11 +25,12 @@ class Turma:
         self.maiorNota = alunos[0]
 
         for i in alunos:
-            self.turma.append(i)
-            if i.nota < self.menorNota.nota:
-                self.menorNota = i
-            if i.nota > self.maiorNota.nota:
-                self.maiorNota = i
+            if i.nota >= 0 and i.nota <= 10:
+                self.turma.append(i)
+                if i.nota < self.menorNota.nota:
+                    self.menorNota = i
+                elif i.nota > self.maiorNota.nota:
+                    self.maiorNota = i
 
     def mostrarAlunos(self):
         """
